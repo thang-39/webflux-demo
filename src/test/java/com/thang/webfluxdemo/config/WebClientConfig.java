@@ -10,6 +10,7 @@ public class WebClientConfig {
     public WebClient webClient() {
         return WebClient.builder()
                 .baseUrl("http://localhost:8080")
+//                .baseUrl("http://order-service") // real life
                 .build();
     }
 }
