@@ -41,4 +41,24 @@ public class ReactiveMathService {
                 .map(dto -> dto.getFirst() * dto.getSecond())
                 .map(Response::new);
     }
+
+    public Mono<Response> plus(int num1, int num2) {
+        return Mono.fromSupplier(() -> num1 *  num2)
+                .map(Response::new);
+    }
+
+    public Mono<Response> minus(int num1, int num2) {
+        return Mono.fromSupplier(() -> num1 -  num2)
+                .map(Response::new);
+    }
+
+    public Mono<Response> multiply(int num1, int num2) {
+        return Mono.fromSupplier(() -> num1 *  num2)
+                .map(Response::new);
+    }
+
+    public Mono<Response> divide(int num1, int num2) {
+        return Mono.fromSupplier(() ->  num1 /  num2)
+                .map(Response::new);
+    }
 }
