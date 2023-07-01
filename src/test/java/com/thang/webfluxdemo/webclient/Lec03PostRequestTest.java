@@ -1,4 +1,4 @@
-package com.thang.webfluxdemo;
+package com.thang.webfluxdemo.webclient;
 
 import com.thang.webfluxdemo.dto.MultiplyRequestDto;
 import com.thang.webfluxdemo.dto.Response;

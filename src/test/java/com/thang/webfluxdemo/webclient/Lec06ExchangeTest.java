@@ -1,4 +1,4 @@
-package com.thang.webfluxdemo;
+package com.thang.webfluxdemo.webclient;
 
 import com.thang.webfluxdemo.dto.InputFailedValidationResponse;
 import com.thang.webfluxdemo.dto.Response;
@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.WebClient;
-import org.springframework.web.reactive.function.client.WebClientResponseException;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
